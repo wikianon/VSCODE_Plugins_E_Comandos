@@ -418,6 +418,43 @@ Clique no Fim da linha e pressione:
 SHIFT + Home
 ```
 -------------------------------
+#### Utilizando a tag `pre` e `code` para mostrar código fonte na página.
+
+```
+<pre><!---->
+<code><!---->
+  #inlude &lt;iostream&gt;
+  
+  using namespace std;
+
+  int main(){
+
+    cout << "Hello World!\n";
+      
+    return 0;
+
+  }
+</code>
+</pre>
+```
+
+A tag `pre` ajusta as tabulações e enter do código adicionado exatamanete como está na página
+A tag `code` serve para colocarmos um exemplo de código no site podemos usar a tag code
+
+-------------------------------
+#### Carrega a página no próprio frame.
+```
+<a href="www.site.com.br" target="_self">Link 1</a>
+```
+#### Geralmente `target="_self"` é usado nos links internos da prória página.
+
+#### Carrega a página em uma nova janela do navegador.
+```
+<a href="www.site.com.br" target="_blank">Link 1</a>
+```
+##### Geralmente `target="_blank` é usado para link's externos de outros sites.
+
+-------------------------------
 #### Crie um projeto chamado `comandos_emmet`:
 
 #### Crie uma página `index.html`
@@ -1126,7 +1163,7 @@ nano ~/.config/Code/User/settings.json
 ```
 {
 
-"breadcrumbs.enabled": false, //Desabilita a visualização do caminho dos arquivos
+"breadcrumbs.enabled": false, //Desabilita visualização do caminho dos arquivos, default é true 
 "editor.tabSize": 4, // Tabulação com 4 espaços
 "editor.insertSpaces": true, //Configura interseção de espaços para a tabulação
 //"editor.cursorStyle": "block",  //Faz o cursor se comportar como um bloco
@@ -1142,7 +1179,6 @@ nano ~/.config/Code/User/settings.json
 
     "workbench.startupEditor": "none"
 }
-
 ```
 
 Pressione `CTRL+X e S` para sair e salvar.
@@ -1178,7 +1214,7 @@ sudo nano /usr/share/applications/google-chrome.desktop
 
 ##### Adicione a linha:
 ```
-Exec=/usr/bin/google-chrome-stable --disable-gpu
+Exec=/usr/bin/google-chrome-stable %U --disable-gpu
 ```
 
 #### O mesmo pode ser feito para o firefox, não é nescessário fazer em todas as linhas que contém `Exec` somente na primeira que aparecer.
@@ -1312,6 +1348,8 @@ Websphere Liberty
 [Running VScode linux all](https://code.visualstudio.com/docs/setup/linux)
 
 [KeyBoard Short Cut Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) - Comandos VSCODE linux
+
+[Fundação Bradesco](http://www.fundacaobradesco.org.br/vv-apostilas/cursoHTML/Arquivo_do_menu_opcoes.html)
 
 [VS Code Configuration](https://gist.github.com/AlanD20/c7ca5e96a929d87f0a1e349982ccfde9)
 
